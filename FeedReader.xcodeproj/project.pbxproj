@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70AAFB4195FA6A20060FA98 /* ECAFavoritesActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AAFB3195FA6A20060FA98 /* ECAFavoritesActivity.m */; };
+		F70AAFB8195FA8920060FA98 /* ECAAddToFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AAFB6195FA8920060FA98 /* ECAAddToFavoritesViewController.m */; };
+		F70AAFB9195FA8920060FA98 /* ECAAddToFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70AAFB7195FA8920060FA98 /* ECAAddToFavoritesViewController.xib */; };
+		F70AAFBC195FB0490060FA98 /* ECAFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AAFBB195FB0490060FA98 /* ECAFavorite.m */; };
+		F70AAFBF195FB3310060FA98 /* ECAFavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AAFBE195FB3310060FA98 /* ECAFavoritesTableViewController.m */; };
+		F70AAFC3195FB7BF0060FA98 /* ECAFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70AAFC1195FB7BF0060FA98 /* ECAFavoriteViewController.m */; };
+		F70AAFC4195FB7BF0060FA98 /* ECAFavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70AAFC2195FB7BF0060FA98 /* ECAFavoriteViewController.xib */; };
+		F70AAFC8195FBC910060FA98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70AAFC7195FBC910060FA98 /* Images.xcassets */; };
+		F76DEBA9195A7E5C00A69601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBA8195A7E5C00A69601 /* Foundation.framework */; };
+		F76DEBAB195A7E5C00A69601 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBAA195A7E5C00A69601 /* CoreGraphics.framework */; };
+		F76DEBAD195A7E5C00A69601 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBAC195A7E5C00A69601 /* UIKit.framework */; };
+		F76DEBAF195A7E5C00A69601 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBAE195A7E5C00A69601 /* CoreData.framework */; };
+		F76DEBB5195A7E5C00A69601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76DEBB3195A7E5C00A69601 /* InfoPlist.strings */; };
+		F76DEBB7195A7E5C00A69601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBB6195A7E5C00A69601 /* main.m */; };
+		F76DEBBB195A7E5C00A69601 /* ECAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBBA195A7E5C00A69601 /* ECAAppDelegate.m */; };
+		F76DEBBE195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBBC195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodeld */; };
+		F76DEBC7195A7E5C00A69601 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBC6195A7E5C00A69601 /* XCTest.framework */; };
+		F76DEBC8195A7E5C00A69601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBA8195A7E5C00A69601 /* Foundation.framework */; };
+		F76DEBC9195A7E5C00A69601 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBAC195A7E5C00A69601 /* UIKit.framework */; };
+		F76DEBCA195A7E5C00A69601 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76DEBAE195A7E5C00A69601 /* CoreData.framework */; };
+		F76DEBD2195A7E5C00A69601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76DEBD0195A7E5C00A69601 /* InfoPlist.strings */; };
+		F76DEBD4195A7E5C00A69601 /* TheHackeratiiReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBD3195A7E5C00A69601 /* TheHackeratiiReaderTests.m */; };
+		F76DEBE0195A7E8F00A69601 /* ECAFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBDF195A7E8F00A69601 /* ECAFeedTableViewController.m */; };
+		F76DEBE4195A801F00A69601 /* ECAFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBE3195A801F00A69601 /* ECAFeed.m */; };
+		F76DEBE8195A87AA00A69601 /* ECAEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76DEBE6195A87AA00A69601 /* ECAEntryViewController.m */; };
+		F76DEBE9195A87AA00A69601 /* ECAEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76DEBE7195A87AA00A69601 /* ECAEntryViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F76DEBCB195A7E5C00A69601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F76DEB9D195A7E5C00A69601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F76DEBA4195A7E5C00A69601;
+			remoteInfo = TheHackeratiiReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F70AAFB2195FA6A20060FA98 /* ECAFavoritesActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFavoritesActivity.h; sourceTree = "<group>"; };
+		F70AAFB3195FA6A20060FA98 /* ECAFavoritesActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFavoritesActivity.m; sourceTree = "<group>"; };
+		F70AAFB5195FA8920060FA98 /* ECAAddToFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAAddToFavoritesViewController.h; sourceTree = "<group>"; };
+		F70AAFB6195FA8920060FA98 /* ECAAddToFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAAddToFavoritesViewController.m; sourceTree = "<group>"; };
+		F70AAFB7195FA8920060FA98 /* ECAAddToFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ECAAddToFavoritesViewController.xib; sourceTree = "<group>"; };
+		F70AAFBA195FB0490060FA98 /* ECAFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFavorite.h; sourceTree = "<group>"; };
+		F70AAFBB195FB0490060FA98 /* ECAFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFavorite.m; sourceTree = "<group>"; };
+		F70AAFBD195FB3310060FA98 /* ECAFavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFavoritesTableViewController.h; sourceTree = "<group>"; };
+		F70AAFBE195FB3310060FA98 /* ECAFavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFavoritesTableViewController.m; sourceTree = "<group>"; };
+		F70AAFC0195FB7BF0060FA98 /* ECAFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFavoriteViewController.h; sourceTree = "<group>"; };
+		F70AAFC1195FB7BF0060FA98 /* ECAFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFavoriteViewController.m; sourceTree = "<group>"; };
+		F70AAFC2195FB7BF0060FA98 /* ECAFavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ECAFavoriteViewController.xib; sourceTree = "<group>"; };
+		F70AAFC7195FBC910060FA98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F76DEBA5195A7E5C00A69601 /* FeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DEBA8195A7E5C00A69601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F76DEBAA195A7E5C00A69601 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F76DEBAC195A7E5C00A69601 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F76DEBAE195A7E5C00A69601 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F76DEBB2195A7E5C00A69601 /* FeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeedReader-Info.plist"; sourceTree = "<group>"; };
+		F76DEBB4195A7E5C00A69601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F76DEBB6195A7E5C00A69601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F76DEBB8195A7E5C00A69601 /* FeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeedReader-Prefix.pch"; sourceTree = "<group>"; };
+		F76DEBB9195A7E5C00A69601 /* ECAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAAppDelegate.h; sourceTree = "<group>"; };
+		F76DEBBA195A7E5C00A69601 /* ECAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAAppDelegate.m; sourceTree = "<group>"; };
+		F76DEBBD195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheHackeratiiReader.xcdatamodel; sourceTree = "<group>"; };
+		F76DEBC5195A7E5C00A69601 /* FeedReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76DEBC6195A7E5C00A69601 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F76DEBCF195A7E5C00A69601 /* FeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeedReaderTests-Info.plist"; sourceTree = "<group>"; };
+		F76DEBD1195A7E5C00A69601 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F76DEBD3195A7E5C00A69601 /* TheHackeratiiReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheHackeratiiReaderTests.m; sourceTree = "<group>"; };
+		F76DEBDE195A7E8F00A69601 /* ECAFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFeedTableViewController.h; sourceTree = "<group>"; };
+		F76DEBDF195A7E8F00A69601 /* ECAFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFeedTableViewController.m; sourceTree = "<group>"; };
+		F76DEBE2195A801F00A69601 /* ECAFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAFeed.h; sourceTree = "<group>"; };
+		F76DEBE3195A801F00A69601 /* ECAFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAFeed.m; sourceTree = "<group>"; };
+		F76DEBE5195A87AA00A69601 /* ECAEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAEntryViewController.h; sourceTree = "<group>"; };
+		F76DEBE6195A87AA00A69601 /* ECAEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAEntryViewController.m; sourceTree = "<group>"; };
+		F76DEBE7195A87AA00A69601 /* ECAEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ECAEntryViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76DEBA2195A7E5C00A69601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DEBAB195A7E5C00A69601 /* CoreGraphics.framework in Frameworks */,
+				F76DEBAF195A7E5C00A69601 /* CoreData.framework in Frameworks */,
+				F76DEBAD195A7E5C00A69601 /* UIKit.framework in Frameworks */,
+				F76DEBA9195A7E5C00A69601 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DEBC2195A7E5C00A69601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DEBC7195A7E5C00A69601 /* XCTest.framework in Frameworks */,
+				F76DEBCA195A7E5C00A69601 /* CoreData.framework in Frameworks */,
+				F76DEBC9195A7E5C00A69601 /* UIKit.framework in Frameworks */,
+				F76DEBC8195A7E5C00A69601 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76DEB9C195A7E5C00A69601 = {
+			isa = PBXGroup;
+			children = (
+				F76DEBB0195A7E5C00A69601 /* TheHackeratiiReader */,
+				F76DEBCD195A7E5C00A69601 /* TheHackeratiiReaderTests */,
+				F76DEBA7195A7E5C00A69601 /* Frameworks */,
+				F76DEBA6195A7E5C00A69601 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76DEBA6195A7E5C00A69601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBA5195A7E5C00A69601 /* FeedReader.app */,
+				F76DEBC5195A7E5C00A69601 /* FeedReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76DEBA7195A7E5C00A69601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBA8195A7E5C00A69601 /* Foundation.framework */,
+				F76DEBAA195A7E5C00A69601 /* CoreGraphics.framework */,
+				F76DEBAC195A7E5C00A69601 /* UIKit.framework */,
+				F76DEBAE195A7E5C00A69601 /* CoreData.framework */,
+				F76DEBC6195A7E5C00A69601 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F76DEBB0195A7E5C00A69601 /* TheHackeratiiReader */ = {
+			isa = PBXGroup;
+			children = (
+				F70AAFC7195FBC910060FA98 /* Images.xcassets */,
+				F76DEBE1195A7FEB00A69601 /* models */,
+				F76DEBDD195A7E6C00A69601 /* controllers */,
+				F76DEBB9195A7E5C00A69601 /* ECAAppDelegate.h */,
+				F76DEBBA195A7E5C00A69601 /* ECAAppDelegate.m */,
+				F76DEBBC195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodeld */,
+				F76DEBB1195A7E5C00A69601 /* Supporting Files */,
+			);
+			path = TheHackeratiiReader;
+			sourceTree = "<group>";
+		};
+		F76DEBB1195A7E5C00A69601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBB2195A7E5C00A69601 /* FeedReader-Info.plist */,
+				F76DEBB3195A7E5C00A69601 /* InfoPlist.strings */,
+				F76DEBB6195A7E5C00A69601 /* main.m */,
+				F76DEBB8195A7E5C00A69601 /* FeedReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F76DEBCD195A7E5C00A69601 /* TheHackeratiiReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBD3195A7E5C00A69601 /* TheHackeratiiReaderTests.m */,
+				F76DEBCE195A7E5C00A69601 /* Supporting Files */,
+			);
+			path = TheHackeratiiReaderTests;
+			sourceTree = "<group>";
+		};
+		F76DEBCE195A7E5C00A69601 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBCF195A7E5C00A69601 /* FeedReaderTests-Info.plist */,
+				F76DEBD0195A7E5C00A69601 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F76DEBDD195A7E6C00A69601 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBDE195A7E8F00A69601 /* ECAFeedTableViewController.h */,
+				F76DEBDF195A7E8F00A69601 /* ECAFeedTableViewController.m */,
+				F76DEBE5195A87AA00A69601 /* ECAEntryViewController.h */,
+				F76DEBE6195A87AA00A69601 /* ECAEntryViewController.m */,
+				F76DEBE7195A87AA00A69601 /* ECAEntryViewController.xib */,
+				F70AAFB5195FA8920060FA98 /* ECAAddToFavoritesViewController.h */,
+				F70AAFB6195FA8920060FA98 /* ECAAddToFavoritesViewController.m */,
+				F70AAFB7195FA8920060FA98 /* ECAAddToFavoritesViewController.xib */,
+				F70AAFBD195FB3310060FA98 /* ECAFavoritesTableViewController.h */,
+				F70AAFBE195FB3310060FA98 /* ECAFavoritesTableViewController.m */,
+				F70AAFC0195FB7BF0060FA98 /* ECAFavoriteViewController.h */,
+				F70AAFC1195FB7BF0060FA98 /* ECAFavoriteViewController.m */,
+				F70AAFC2195FB7BF0060FA98 /* ECAFavoriteViewController.xib */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		F76DEBE1195A7FEB00A69601 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F76DEBE2195A801F00A69601 /* ECAFeed.h */,
+				F76DEBE3195A801F00A69601 /* ECAFeed.m */,
+				F70AAFB2195FA6A20060FA98 /* ECAFavoritesActivity.h */,
+				F70AAFB3195FA6A20060FA98 /* ECAFavoritesActivity.m */,
+				F70AAFBA195FB0490060FA98 /* ECAFavorite.h */,
+				F70AAFBB195FB0490060FA98 /* ECAFavorite.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76DEBA4195A7E5C00A69601 /* FeedReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DEBD7195A7E5C00A69601 /* Build configuration list for PBXNativeTarget "FeedReader" */;
+			buildPhases = (
+				F76DEBA1195A7E5C00A69601 /* Sources */,
+				F76DEBA2195A7E5C00A69601 /* Frameworks */,
+				F76DEBA3195A7E5C00A69601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeedReader;
+			productName = TheHackeratiiReader;
+			productReference = F76DEBA5195A7E5C00A69601 /* FeedReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F76DEBC4195A7E5C00A69601 /* FeedReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76DEBDA195A7E5C00A69601 /* Build configuration list for PBXNativeTarget "FeedReaderTests" */;
+			buildPhases = (
+				F76DEBC1195A7E5C00A69601 /* Sources */,
+				F76DEBC2195A7E5C00A69601 /* Frameworks */,
+				F76DEBC3195A7E5C00A69601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76DEBCC195A7E5C00A69601 /* PBXTargetDependency */,
+			);
+			name = FeedReaderTests;
+			productName = TheHackeratiiReaderTests;
+			productReference = F76DEBC5195A7E5C00A69601 /* FeedReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76DEB9D195A7E5C00A69601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ECA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ecamacho;
+				TargetAttributes = {
+					F76DEBC4195A7E5C00A69601 = {
+						TestTargetID = F76DEBA4195A7E5C00A69601;
+					};
+				};
+			};
+			buildConfigurationList = F76DEBA0195A7E5C00A69601 /* Build configuration list for PBXProject "FeedReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F76DEB9C195A7E5C00A69601;
+			productRefGroup = F76DEBA6195A7E5C00A69601 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76DEBA4195A7E5C00A69601 /* FeedReader */,
+				F76DEBC4195A7E5C00A69601 /* FeedReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76DEBA3195A7E5C00A69601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DEBE9195A87AA00A69601 /* ECAEntryViewController.xib in Resources */,
+				F70AAFC8195FBC910060FA98 /* Images.xcassets in Resources */,
+				F76DEBB5195A7E5C00A69601 /* InfoPlist.strings in Resources */,
+				F70AAFB9195FA8920060FA98 /* ECAAddToFavoritesViewController.xib in Resources */,
+				F70AAFC4195FB7BF0060FA98 /* ECAFavoriteViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DEBC3195A7E5C00A69601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DEBD2195A7E5C00A69601 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76DEBA1195A7E5C00A69601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70AAFC3195FB7BF0060FA98 /* ECAFavoriteViewController.m in Sources */,
+				F76DEBE4195A801F00A69601 /* ECAFeed.m in Sources */,
+				F70AAFB8195FA8920060FA98 /* ECAAddToFavoritesViewController.m in Sources */,
+				F76DEBE8195A87AA00A69601 /* ECAEntryViewController.m in Sources */,
+				F76DEBBB195A7E5C00A69601 /* ECAAppDelegate.m in Sources */,
+				F76DEBB7195A7E5C00A69601 /* main.m in Sources */,
+				F76DEBBE195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodeld in Sources */,
+				F76DEBE0195A7E8F00A69601 /* ECAFeedTableViewController.m in Sources */,
+				F70AAFBF195FB3310060FA98 /* ECAFavoritesTableViewController.m in Sources */,
+				F70AAFB4195FA6A20060FA98 /* ECAFavoritesActivity.m in Sources */,
+				F70AAFBC195FB0490060FA98 /* ECAFavorite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76DEBC1195A7E5C00A69601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DEBD4195A7E5C00A69601 /* TheHackeratiiReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F76DEBCC195A7E5C00A69601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F76DEBA4195A7E5C00A69601 /* FeedReader */;
+			targetProxy = F76DEBCB195A7E5C00A69601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76DEBB3195A7E5C00A69601 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76DEBB4195A7E5C00A69601 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F76DEBD0195A7E5C00A69601 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76DEBD1195A7E5C00A69601 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76DEBD5195A7E5C00A69601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76DEBD6195A7E5C00A69601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76DEBD8195A7E5C00A69601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheHackeratiiReader/FeedReader-Prefix.pch";
+				INFOPLIST_FILE = "TheHackeratiiReader/FeedReader-Info.plist";
+				PRODUCT_NAME = FeedReader;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F76DEBD9195A7E5C00A69601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheHackeratiiReader/FeedReader-Prefix.pch";
+				INFOPLIST_FILE = "TheHackeratiiReader/FeedReader-Info.plist";
+				PRODUCT_NAME = FeedReader;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F76DEBDB195A7E5C00A69601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheHackeratiiReader.app/TheHackeratiiReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheHackeratiiReader/TheHackeratiiReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheHackeratiiReaderTests/FeedReaderTests-Info.plist";
+				PRODUCT_NAME = FeedReaderTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F76DEBDC195A7E5C00A69601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheHackeratiiReader.app/TheHackeratiiReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheHackeratiiReader/TheHackeratiiReader-Prefix.pch";
+				INFOPLIST_FILE = "TheHackeratiiReaderTests/FeedReaderTests-Info.plist";
+				PRODUCT_NAME = FeedReaderTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76DEBA0195A7E5C00A69601 /* Build configuration list for PBXProject "FeedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DEBD5195A7E5C00A69601 /* Debug */,
+				F76DEBD6195A7E5C00A69601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DEBD7195A7E5C00A69601 /* Build configuration list for PBXNativeTarget "FeedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DEBD8195A7E5C00A69601 /* Debug */,
+				F76DEBD9195A7E5C00A69601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76DEBDA195A7E5C00A69601 /* Build configuration list for PBXNativeTarget "FeedReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76DEBDB195A7E5C00A69601 /* Debug */,
+				F76DEBDC195A7E5C00A69601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F76DEBBC195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F76DEBBD195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodel */,
+			);
+			currentVersion = F76DEBBD195A7E5C00A69601 /* TheHackeratiiReader.xcdatamodel */;
+			path = TheHackeratiiReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F76DEB9D195A7E5C00A69601 /* Project object */;
+}
